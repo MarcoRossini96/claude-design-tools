@@ -1,0 +1,25 @@
+/* Fixture con violazioni intenzionali per testare lo scanner. */
+
+.button {
+  color: #ffffff;              /* contrasto: bianco su arancione brand -> verificato sotto */
+  background-color: #ff00aa;   /* brand: colore fuori palette Anthropic */
+  font-family: "Comic Sans MS", cursive; /* brand: font non ammesso */
+  padding: 13px 17px;          /* design-system: spaziatura fuori scala */
+  border-radius: 7px;          /* design-system: raggio fuori scala */
+  font-size: 14px !important;  /* custom rule + px font-size flagged */
+}
+
+.low-contrast {
+  color: #b0aea5;              /* brand mid gray... */
+  background-color: #faf9f5;   /* ...su brand light -> contrasto insufficiente */
+}
+
+.ok {
+  color: #141413;              /* brand dark su brand light: contrasto OK ~ pass */
+  background-color: #faf9f5;
+  padding: 16px;               /* in scala */
+}
+
+a.tiny {
+  height: 20px;                /* wcag: tap target < 44px */
+}

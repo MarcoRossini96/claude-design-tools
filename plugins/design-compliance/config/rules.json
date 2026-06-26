@@ -1,0 +1,37 @@
+{
+  "$description": "Policy di compliance CONFIGURABILE dal team. brand-tokens.json contiene i valori autorevoli Anthropic; qui ci sono soglie, scale e regole custom modificabili.",
+  "wcag": {
+    "level": "AA",
+    "normalTextContrast": 4.5,
+    "largeTextContrast": 3.0,
+    "largeTextMinPx": 24,
+    "minTapTargetPx": 44
+  },
+  "designSystem": {
+    "enforceTokensForColor": true,
+    "enforceSpacingScale": true,
+    "spacingScalePx": [0, 2, 4, 8, 12, 16, 20, 24, 32, 40, 48, 64, 80, 96, 128],
+    "radiiScalePx": [0, 2, 4, 6, 8, 12, 16, 24, 9999],
+    "tokenHint": "Usa un design token / CSS custom property (es. var(--color-...)) invece di un valore grezzo."
+  },
+  "custom": [
+    {
+      "id": "no-important",
+      "description": "Evita !important: spesso indica un override forzato del design system.",
+      "pattern": "!important",
+      "flags": "g",
+      "severity": "warning",
+      "message": "!important rilevato: rivedi la specificita' invece di forzare lo stile.",
+      "appliesTo": ["css", "scss", "less"]
+    },
+    {
+      "id": "no-inline-jsx-style",
+      "description": "Stili inline in JSX/TSX: preferire classi/token del design system.",
+      "pattern": "style=\\{\\{",
+      "flags": "g",
+      "severity": "warning",
+      "message": "Stile inline in JSX: preferisci classi del design system o token.",
+      "appliesTo": ["jsx", "tsx"]
+    }
+  ]
+}

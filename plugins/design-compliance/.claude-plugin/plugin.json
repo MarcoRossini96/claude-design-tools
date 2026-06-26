@@ -1,0 +1,11 @@
+{
+  "$schema": "https://json.schemastore.org/claude-code-plugin-manifest.json",
+  "name": "design-compliance",
+  "displayName": "Design Compliance",
+  "version": "1.2.0",
+  "description": "Tool di compliance on-demand integrato con Claude Design: apre l'app ufficiale e valida il codice UI contro brand Anthropic, design-system token, accessibilita' WCAG e regole custom del team.",
+  "author": { "name": "Marco Rossini", "url": "https://github.com/MarcoRossini96" },
+  "homepage": "https://claude.ai/design",
+  "keywords": ["claude-design", "compliance", "design-system", "accessibility", "wcag", "brand", "linter"],
+  "license": "MIT"
+}

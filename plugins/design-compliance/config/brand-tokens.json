@@ -1,0 +1,22 @@
+{
+  "$source": "anthropic-skills:brand-guidelines",
+  "$description": "Token di brand UFFICIALI Anthropic. Fonte di verita' per la compliance di brand. Non modificare a mano: rigenerare dalla skill brand-guidelines.",
+  "colors": {
+    "main": {
+      "dark":      { "hex": "#141413", "usage": "Primary text and dark backgrounds" },
+      "light":     { "hex": "#faf9f5", "usage": "Light backgrounds and text on dark" },
+      "midGray":   { "hex": "#b0aea5", "usage": "Secondary elements" },
+      "lightGray": { "hex": "#e8e6dc", "usage": "Subtle backgrounds" }
+    },
+    "accent": {
+      "orange": { "hex": "#d97757", "usage": "Primary accent" },
+      "blue":   { "hex": "#6a9bcc", "usage": "Secondary accent" },
+      "green":  { "hex": "#788c5d", "usage": "Tertiary accent" }
+    }
+  },
+  "typography": {
+    "headings": { "family": "Poppins", "fallback": "Arial",   "minSizePt": 24 },
+    "body":     { "family": "Lora",    "fallback": "Georgia" },
+    "allowedFamilies": ["Poppins", "Lora", "Arial", "Georgia"]
+  }
+}

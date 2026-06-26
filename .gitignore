@@ -1,0 +1,5 @@
+node_modules/
+.DS_Store
+*.log
+# token CSS generato dai run di prova nella root del repo (NON nei fixtures)
+/design-tokens.css
