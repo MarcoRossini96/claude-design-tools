@@ -92,9 +92,28 @@ ship-readiness score. Zero deps, MIT. Repo: https://github.com/MarcoRossini96/cl
 
 ---
 
-## 6. Get it in front of Anthropic / the real user base
+## 6. Get it into Anthropic's marketplace (the real process — NOT a PR)
 
-- **Official marketplace PR** → `anthropics/claude-plugins-official` (has an `external_plugins/` section). This is the
-  highest-leverage distribution channel; I can prepare the PR for you.
+Anthropic has two marketplaces:
+- **`claude-plugins-official`** — curated by Anthropic at its discretion. No application process; the form does NOT add to it.
+- **`claude-community`** (`anthropics/claude-plugins-community`) — where third-party submissions land after review. Users add it
+  with `/plugin marketplace add anthropics/claude-plugins-community`.
+
+**Submit to the community marketplace via the in-app form** (run `claude plugin validate` first — it passes):
+- Individual authors: **Console → https://platform.claude.com/plugins/submit**
+- Team/Enterprise orgs: claude.ai → https://claude.ai/admin-settings/directory/submissions/plugins/new
+
+### Submission packet (paste into the form)
+- **Plugin name:** `design-compliance`
+- **Marketplace / repo:** `https://github.com/MarcoRossini96/claude-design-tools`
+- **Install id:** `design-compliance@claude-design-tools`
+- **Description:** Opens Claude Design and audits UI code against the Anthropic brand, design-system tokens, WCAG accessibility and custom rules; auto-fixes and reports ship-readiness. Zero dependencies.
+- **Category:** Development / Code quality
+- **Author:** Marco Rossini (github.com/MarcoRossini96)
+- **License:** MIT
+
+After approval, the plugin is pinned to a commit SHA in the community catalog; the public catalog syncs nightly.
+
+## 7. Also worth doing
 - **Claude Code Discussion** → `anthropics/claude-code` Discussions, "Show and tell".
 - Community directories (e.g. claudepluginhub).
