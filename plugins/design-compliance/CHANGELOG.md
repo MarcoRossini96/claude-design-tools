@@ -2,6 +2,12 @@
 
 Tutte le modifiche rilevanti del plugin `design-compliance`. Formato basato su [Keep a Changelog](https://keepachangelog.com), versioning [SemVer](https://semver.org).
 
+## [1.3.0] - 2026-06-26
+### Added
+- Comando `/design-compliance:connect`: apre **Claude Design** nel browser e lo **collega automaticamente a questo progetto**
+  via il suo repo GitHub (estensione Claude-in-Chrome), per usarne la capacita' di design sul tuo codice; poi si valida con `check`/`close`.
+  Nota: il browser e' guidato da Claude a runtime (serve estensione connessa + login). Alternativa ufficiale piu' robusta: comando `/design`.
+
 ## [1.2.1] - 2026-06-26
 ### Changed
 - Descrizione in **inglese** e ottimizzata per la scoperta in `plugin.json` e `marketplace.json` (è ciò che appare in `/plugin Discover` e nel catalogo del marketplace).
