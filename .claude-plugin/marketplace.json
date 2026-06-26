@@ -2,14 +2,14 @@
   "name": "claude-design-tools",
   "owner": { "name": "Marco Rossini", "url": "https://github.com/MarcoRossini96" },
   "metadata": {
-    "description": "Tool a supporto di Claude Design.",
-    "version": "1.2.0"
+    "description": "Tools for Claude Design.",
+    "version": "1.2.1"
   },
   "plugins": [
     {
       "name": "design-compliance",
       "source": "./plugins/design-compliance",
-      "description": "Compliance checker integrato con Claude Design: brand Anthropic, design-system token, WCAG, regole custom."
+      "description": "Audit and auto-fix Claude Design UI for Anthropic brand, design-system tokens, and WCAG accessibility — one command, zero dependencies."
     }
   ]
 }

@@ -2,6 +2,10 @@
 
 Tutte le modifiche rilevanti del plugin `design-compliance`. Formato basato su [Keep a Changelog](https://keepachangelog.com), versioning [SemVer](https://semver.org).
 
+## [1.2.1] - 2026-06-26
+### Changed
+- Descrizione in **inglese** e ottimizzata per la scoperta in `plugin.json` e `marketplace.json` (è ciò che appare in `/plugin Discover` e nel catalogo del marketplace).
+
 ## [1.2.0] - 2026-06-26
 ### Added
 - **Modalità `--close` (massimo effort per chiudere il progetto)** e comando `/design-compliance:close`:
